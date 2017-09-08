@@ -11,6 +11,10 @@ import javax.validation.constraints.Size;
 
 import static javax.swing.text.StyleConstants.Size;
 
+import com.example.finalproject.pojos.Admin;
+import com.example.finalproject.pojos.Role;
+import com.example.finalproject.pojos.Visitor;
+
 /**
  * Created by Natalie on 7/2/2017.
  */
@@ -35,14 +39,34 @@ public class User {
     @NotEmpty(message = "Please enter a valid email address")
     private String email;
 
+    // some validations go here
+    private String roleName;
+
+    private Role role;
+
     public User() {
     }
 
-    public User(String username, String password, String verify, String email, boolean isAdministrator) {
+    public User(String username, String password, String verify, String email, boolean isAdministrator, String roleName) {
         this.username = username;
         this.password = password;
         this.verify = verify;
         this.email = email;
+        setRole(roleName);
+    }
+
+    public String getRole() {
+      return role;
+    }
+
+    public void setRole(String roleName) {
+      if (role == 'admin') {
+        this.role = new Admin();
+      } else if (role == 'visitor') {
+        this.role = new Vistor();
+      } else {
+        this.role = new Visitor(); // default to visitor
+      }
     }
 
     public int getUserId() {
