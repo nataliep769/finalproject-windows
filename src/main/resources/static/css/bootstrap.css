@@ -90,6 +90,7 @@ hgroup,
 main,
 nav,
 section {
+    margin-top: 60px;
     display: block
 }
 body {
@@ -418,8 +419,8 @@ h6 {
     line-height: 1.1
 }
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, .1)
 }
@@ -967,9 +968,6 @@ pre code {
         max-width: 75%
     }
     .col-md-10 {
-        -ms-flex: 0 0 83.333333%;
-        flex: 0 0 83.333333%;
-        max-width: 83.333333%
     }
 
     .col-md-11 {
@@ -1082,8 +1080,8 @@ pre code {
     }
     .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%
+        flex: 80%;
+        max-width: 80%
     }
     .col-lg-9 {
         -ms-flex: 0 0 75%;

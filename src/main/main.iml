@@ -16,5 +16,9 @@
     <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.5.15" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-core:4.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:1.13.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:1.5.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: javax.transaction:javax.transaction-api:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.3.9.RELEASE" level="project" />
   </component>
 </module>

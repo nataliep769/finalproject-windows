@@ -1,3 +1,10 @@
+/*Polymer styles*/
+paper-input {
+    max-width: 400px;
+    margin: auto;
+    color: white;
+  }
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;

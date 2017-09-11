@@ -4,30 +4,40 @@
     <meta charset="UTF-8"/>
     <title th:text="${title}"></title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet"/>
+    <script th:src="@{..\bower_components\webcomponentsjs\webcomponents-lite.js}"></script>
+    <link rel="import" th:href="@{..\bower_components\polymer\polymer.html}"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}" />
     <link rel="stylesheet" type="text/css" th:href="@{/css/homestyles.css}"/>
-
+    <link rel="import" th:href="@{..\bower_components\paper-toolbar\paper-toolbar.html}"/>
+    <link rel="import" th:href="@{..\bower_components\paper-icon-button\paper-icon-button.html}"/>
+    <link rel="import" th:href="@{..\bower_components\iron-icons\iron-icons.html}"/>
+    <script th:src="@{..\bower_components\webcomponentsjs\webcomponents-lite.js}"></script>
 </head>
 <body>
-    <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/post">All Posts</a>
+                    <a class="nav-link" href="/post" tabindex="-1">
+                        <paper-icon-button slot="top" icon="refresh"></paper-icon-button>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/post/add">Add</a>
+                    <a class="nav-link" href="/post/add" tabindex="-1">
+                        <paper-icon-button icon="create"></paper-icon-button>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/post/remove">Remove</a>
+                    <a class="nav-link" href="/post/remove" tabindex="-1">
+                        <paper-icon-button icon="delete-sweep"></paper-icon-button>
+                    </a>
                 </li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
 
-    <header class="masthead" style="background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://paolabottomley.files.wordpress.com/2012/12/hands-on-the-pianos-keys1.jpg)">
+    <header class="masthead" style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://paolabottomley.files.wordpress.com/2012/12/hands-on-the-pianos-keys1.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">

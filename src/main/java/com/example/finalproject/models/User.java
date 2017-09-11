@@ -3,11 +3,12 @@ package com.example.finalproject.models;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.management.relation.Role;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import java.util.Collection;
 
 import static javax.swing.text.StyleConstants.Size;
 
@@ -38,7 +39,7 @@ public class User {
     public User() {
     }
 
-    public User(String username, String password, String verify, String email, boolean isAdministrator) {
+    public User(String username, String password, String verify, String email) {
         this.username = username;
         this.password = password;
         this.verify = verify;

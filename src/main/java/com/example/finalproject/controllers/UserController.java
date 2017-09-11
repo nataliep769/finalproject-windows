@@ -1,7 +1,5 @@
 package com.example.finalproject.controllers;
 
-
-
 import com.example.finalproject.models.User;
 import com.example.finalproject.models.data.PostDao;
 import com.example.finalproject.models.data.UserDao;
@@ -10,7 +8,10 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -79,9 +80,8 @@ public class UserController {
             String username = newUser.getUsername();
             String verify_hash = BCrypt.hashpw(newUser.getPassword(), BCrypt.gensalt());
             String email = newUser.getEmail();
-            boolean administrator = false;
 
-            User hashedUser = new User(username, password_hash, verify_hash, email, administrator);
+            User hashedUser = new User(username, password_hash, verify_hash, email);
 
             userDao.save(hashedUser);
 
