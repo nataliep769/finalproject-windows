@@ -25,19 +25,17 @@
             <div class="col-sm-6 col-sm-offset-3 r-form-1-box wow fadeInUp">
                 <div class="r-form-1-top">
                     <div class="r-form-1-top-left">
-                        <h3>Login</h3>
+                        <h3 class="input-info">Login</h3>
                     </div>
                 </div>
                 <div class="r-form-1-bottom">
                     <form method="post" style="max-width:600px;" th:object="${user}">
 
                         <div class="form-group">
-                            <label th:for="username"></label>
-                            <input placeholder="Username..." th:field="*{username}" th:value="*{userId}"/>
+                            <input type="text" placeholder="Username..." th:field="*{username}" th:value="*{userId}"/>
                         </div>
                         <div class="form-group">
-                            <label th:for="password"></label>
-                            <input placeholder="Password..." type="password" th:field="*{password}"/>
+                            <input type="text" placeholder="Password..." type="password" th:field="*{password}"/>
                         </div>
                         <p class="error" th:text="${error}"></p>
                         <input type="submit" value="Login"/>
