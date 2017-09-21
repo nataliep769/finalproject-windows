@@ -71,8 +71,8 @@ img { max-width: 100%; }
 	line-height: 32px;
 }
 
-::-moz-selection { background: #e36da1; color: #fff; text-shadow: none; }
-::selection { background: #e36da1; color: #fff; text-shadow: none; }
+::-moz-selection { background: gray; color: #fff; text-shadow: none; }
+::selection { background: gray; color: #fff; text-shadow: none; }
 
 
 /***** General style, all sections *****/
@@ -182,7 +182,7 @@ ul.navbar-nav {
     padding: 70px 0 70px 0;
     }
 
-.top-content .text { color: #fff; }
+.top-content .text { color: white; }
 .top-content .text h1 {
     color: white;
 }

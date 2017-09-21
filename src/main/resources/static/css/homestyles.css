@@ -171,10 +171,12 @@ body {
         -o-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0); } }
 
+/*VIEW PAGE*/
+
 header.masthead {
-  background-image: url('https://paolabottomley.files.wordpress.com/2012/12/hands-on-the-pianos-keys1.jpg');
   margin-bottom: 20px;
   margin-top: 0px;
+  height: 500px;
   text-align: center;
   background: no-repeat center center;
   background-attachment: scroll;
@@ -185,13 +187,13 @@ header.masthead {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 300px 0 340px 0px;
+    padding: 200px 0 340px 0px;
     color: white; }
     @media only screen and (min-width: 768px) {
       header.masthead .page-heading,
       header.masthead .post-heading,
       header.masthead .site-heading {
-        padding: 300px 0 340px 0px;
+        padding: 200px 0 340px 0px;
         }
         }
   header.masthead .page-heading,
@@ -268,6 +270,110 @@ header.masthead {
     header.masthead .post-heading .subheading {
       letter-spacing: .1em;
       font-size: 18px; } }
+
+/* VIEW PAGE END */
+
+/*HOME PAGE */
+
+header.homepage {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  height: 690px;
+  text-align: center;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.homepage .page-heading,
+  header.homepage .post-heading,
+  header.homepage .site-heading {
+    padding: 330px 0 340px 0px;
+    color: white; }
+    @media only screen and (min-width: 768px) {
+      header.homepage .page-heading,
+      header.homepage .post-heading,
+      header.homepage .site-heading {
+        padding: 330px 0 340px 0px;
+        }
+        }
+  header.homepage .page-heading,
+  header.homepage .site-heading {
+    text-align: center; }
+    header.homepage .page-heading h1,
+    header.homepage .site-heading h1 {
+      padding-top: 0px;
+      margin-bottom: 0px;
+      font-family: 'Lato';
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 26px;
+      line-height: 150%;
+      letter-spacing: .8em;
+      margin-top: 0; }
+    header.homepage .page-heading .subheading,
+    header.homepage .site-heading .subheading {
+      font-size: 18px;
+      font-weight: lighter;
+      line-height: 1.1;
+      display: block;
+      letter-spacing: .5em;
+      margin: 10px 0 0;
+      font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      }
+    @media only screen and (min-width: 768px) {
+      header.homepage .page-heading h1,
+      header.homepage .site-heading h1 {
+        padding-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Lato';
+        font-weight: lighter;
+        text-transform: uppercase;
+        line-height: 150%;
+        font-size: 26px;
+        letter-spacing: .6em;
+         } }
+  header.homepage .post-heading h1 {
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-weight: lighter;
+    }
+  header.homepage .post-heading .meta,
+  header.homepage .post-heading .subheading {
+    line-height: 1.1;
+    letter-spacing: .1em;
+    display: block; }
+  header.homepage .post-heading .subheading {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px 0 30px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: 'Cardo'; }
+  header.homepage .post-heading .meta {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Cardo', 'Times New Roman', serif; }
+    header.homepage .post-heading .meta a {
+      color: white; }
+  @media only screen and (min-width: 768px) {
+    header.homepage .post-heading h1 {
+      font-size: 24px;
+      font-weight: lighter;
+      letter-spacing: .4em;
+      line-height: 150%;
+      }
+    header.homepage .post-heading .subheading {
+      letter-spacing: .1em;
+      font-size: 18px; } }
+
+/*HOME PAGE END */
 
 .post-preview > a {
   color: #333333; }
